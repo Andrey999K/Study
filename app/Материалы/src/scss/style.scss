@@ -1,0 +1,101 @@
+// @import "utilities/utilities", "base/base", "global/global";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+body {
+    height: 3000px;
+    font-size: 25px;
+    background: #88eb61;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 20px;
+    font-size: 30px;
+    background: orange;
+    z-index: 1;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main {
+    margin-top: 74px;
+    // background: #37f8ff;
+}
+
+.container {
+    max-width: 1380px;
+    padding: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background: #37f8ff;
+}
+
+.nav {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__list {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+
+        &-item {
+            // z-index: 1;
+            background: orange;
+
+            a {
+                display: block;
+                padding: 20px 30px;
+                color: black;
+            }
+
+            a:hover {
+                text-shadow: 0 0 10px red;
+            }
+        }
+
+        &-lvl2 {
+            background: #fab73b;
+            // position: fixed;
+            position: absolute;
+            top: calc(-592px + 74px);
+            transition: 0.3s;
+            z-index: -1;
+
+            li {
+                background: #fab73b;
+
+                &:hover {
+                    background: #ffc964;
+                }
+            }
+        }
+    }
+}
+
+.menu-desctop {
+    top: 74px;
+    z-index: -1;
+}
+
+.lesson {
+    border-top: solid 2px black;
+}
