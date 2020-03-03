@@ -1,7 +1,7 @@
 body {
   font-weight: 500;
   font-size: 24px;
-  background-color: #F5F6FC;
+  background-color: #f5f6fc;
 }
 
 .header {
@@ -18,14 +18,14 @@ body {
 }
 
 .nav {
-  max-width: 1280px;
   width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 
   &__list {
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
 
     a {
       display: block;
@@ -47,33 +47,30 @@ body {
 .course {
   position: absolute;
   top: 68px;
-  //background: orange;
-  background-color: $color-dark;
   display: none;
+  background-color: $color-dark;
 
   &__item {
     position: relative;
+
+    &:hover > .course__item-list {
+      display: block;
+    }
 
     &-list {
       position: absolute;
       top: 0;
       right: -143px;
       display: none;
-      //background: green;
       background-color: $color-dark;
-    }
-
-    &:hover > .course__item-list {
-      display: block;
     }
 
     ul li ul {
       position: absolute;
       top: 67px;
       right: -407px;
-      //background: #2bff00;
-      background-color: $color-dark;
       display: none;
+      background-color: $color-dark;
     }
 
     ul li:hover > ul {
