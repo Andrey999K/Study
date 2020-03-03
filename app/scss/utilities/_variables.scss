@@ -1,0 +1,3 @@
+$color-primary: #FA4E5D;
+$color--primary-hover: darken($color: $color-primary, $amount: 10%);
+$color-dark: lighten($color: $color-primary, $amount: 10%);
