@@ -46,7 +46,12 @@ header(class="header")
                             li
                                 a(href="#") 2 семестр
             li.nav__list-item
-                a.nav__list-item-link(href="#") Что-то там
+                a.nav__list-item-link(href="#") Прочее
+                ul.course
+                    each item in navArrayForOther
+                        li.course__item
+                            a(href=item.link)= item.title
+
             li.nav__list-item
                 a.nav__list-item-link(href="#") Что-то там
             li.nav__list-item
