@@ -48,7 +48,12 @@ header(class="header")
                         a(href="#") Лаба 2
                     li.nav__list-item
                         a(href="#") Лаба 3
-            li.nav__list-item
+            li.nav__list-item.item
                 a.nav__list-item-link(href="#") Прочее
-            li.nav__list-item
+                block other
+                //- ul.nav__list-lvl2
+                //-     each item in other1
+                //-         li.nav__list-item
+                //-             a(href="#")=item
+            li.nav__list-item.item
                 a.nav__list-item-link(href="#") Прочее

@@ -1,0 +1,59 @@
+mixin header(text1, text2, text3)
+    header(class="header")
+        nav.nav
+            ul.nav__list
+                li.nav__list-item.item
+                    a.nav__list-item-link(href="#") Лекции
+                    ul.nav__list-lvl2
+                        li.nav__list-item
+                            a(href="#") Лекция 1
+                        li.nav__list-item
+                            a(href="#") Лекция 2
+                        li.nav__list-item
+                            a(href="#") Лекция 3
+                        li.nav__list-item
+                            a(href="#") Лекция 4
+                        li.nav__list-item
+                            a(href="#") Лекция 5
+                        li.nav__list-item
+                            a(href="#") Лекция 6
+                        li.nav__list-item
+                            a(href="#") Лекция 7
+                        li.nav__list-item
+                            a(href="#") Лекция 8
+                li.nav__list-item.item
+                    a.nav__list-item-link(href="#") Практики
+                    ul.nav__list-lvl2
+                        li.nav__list-item
+                            a(href="#") Практика 1
+                        li.nav__list-item
+                            a(href="#") Практика 2
+                        li.nav__list-item
+                            a(href="#") Практика 3
+                        li.nav__list-item
+                            a(href="#") Практика 4
+                        li.nav__list-item
+                            a(href="#") Практика 5
+                        li.nav__list-item
+                            a(href="#") Практика 6
+                        li.nav__list-item
+                            a(href="#") Практика 7
+                        li.nav__list-item
+                            a(href="#") Практика 8
+                li.nav__list-item.item
+                    a.nav__list-item-link(href="#") Лабы
+                    ul.nav__list-lvl2
+                        li.nav__list-item
+                            a(href="#") Лаба 1
+                        li.nav__list-item
+                            a(href="#") Лаба 2
+                        li.nav__list-item
+                            a(href="#") Лаба 3
+                li.nav__list-item.item
+                    a.nav__list-item-link(href="#") Прочее
+                    ul.nav__list-lvl2
+                        each val, index in [text1, text2, text3]
+                            li.nav__list-item
+                                a(href="#")= val
+                li.nav__list-item
+                    a.nav__list-item-link(href="#") Прочее

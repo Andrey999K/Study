@@ -27,4 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	menu_desctop[2].addEventListener("mouseout", e => {
 		menu_desctop2[2].classList.remove("menu-desctop");
 	});
+	menu_desctop[3].addEventListener("mouseover", e => {
+		menu_desctop2[3].classList.add("menu-desctop");
+	});
+	menu_desctop[3].addEventListener("mouseout", e => {
+		menu_desctop2[3].classList.remove("menu-desctop");
+	});
 });

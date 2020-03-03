@@ -1,0 +1,17 @@
+extends ../../src/pug/layouts/_main
+
+block mixins
+    include ../../src/pug/modules/_mixins
+
+block variables
+    //- put your vars here
+    - var pageTitle= 'HTML5 Regular Template'
+
+block header
+    +header("Протоколы", "Сетевые устройства")
+
+block content
+    main(class="main")
+
+block scripts
+    script(src="../../src/scripts/scripts.min.js")

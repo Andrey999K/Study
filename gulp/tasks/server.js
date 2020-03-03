@@ -16,7 +16,11 @@ module.exports = function () {
         $.gulp.watch('./app/Материалы/**/*.js', $.gulp.parallel('scripts1'));
         $.gulp.watch([
             './build/**/*.html',
-            './build/scripts/**/*.js'
+            './build/styles/**/*.css',
+            './build/scripts/**/*.js',
+            './build/Материалы/**/*.html',
+            './build/Материалы/**/*.css',
+            './build/Материалы/**/*.js'
         ]).on('change', $.bs.reload); // перезагрузка страницы при изменениях в отслеживаемой директории сервера
     });
 };
